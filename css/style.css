@@ -6,7 +6,19 @@
   font-family: Arial;
   font-family: 'Lato', sans-serif; }
 
-footer ul {
-  display: flex; }
+.container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-areas: "nav content" "nav footer";
+  height: 100vh; }
+
+nav {
+  grid-area: nav; }
+
+section.content {
+  grid-area: content; }
+
+footer {
+  grid-area: footer; }
 
 /*# sourceMappingURL=style.css.map */
