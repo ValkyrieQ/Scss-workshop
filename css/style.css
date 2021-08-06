@@ -13,7 +13,25 @@
   height: 100vh; }
 
 nav {
-  grid-area: nav; }
+  grid-area: nav;
+  padding: 3rem;
+  background: linear-gradient(to bottom, #ec2f4b, #009fff);
+  text-align: center; }
+  nav ul.menu {
+    list-style: none; }
+    nav ul.menu li {
+      margin-top: 3rem; }
+      nav ul.menu li a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #ccc;
+        font-size: 1.5rem;
+        transition: .3s;
+        border-bottom: 2px solid transparent; }
+        nav ul.menu li a:hover {
+          color: #fff;
+          border-bottom: 2px solid #fff;
+          padding-bottom: .5rem; }
 
 section.content {
   grid-area: content; }

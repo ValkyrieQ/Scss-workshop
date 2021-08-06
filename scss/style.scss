@@ -22,7 +22,38 @@ $white: #fff;
 
 nav {
   grid-area: nav;
+  padding: 3rem;
+  background: linear-gradient(to bottom, #ec2f4b, #009fff);
+  text-align: center;
+
+  ul.menu {
+    list-style: none;
+
+    li {
+      // padding: 1rem;
+      margin-top: 3rem;
+      
+      a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $gray;
+        font-size: 1.5rem;
+        // When move mouse out of 'a'. bottom line will slowly transform from (white+padding-bottom 5px) to (transparent+padding-bottom 0px)
+        transition: .3s;
+        border-bottom: 2px solid transparent;
+        
+        // pseudo-class in SCSS using '&:'
+        &:hover {
+          color: $white;
+          border-bottom: 2px solid $white;
+          padding-bottom: .5rem;
+        } 
+      }
+      
+    }
+  }
 }
+
 
 section.content {
   grid-area: content;
