@@ -10,6 +10,7 @@
 
 $gray: #ccc;
 $white: #fff;
+$black: #333;
 
 .container {
   display: grid;
@@ -57,6 +58,46 @@ nav {
 
 section.content {
   grid-area: content;
+  padding: 5rem;
+  background-color: #eee;
+  color: $black;
+
+  .content-flex {
+    display: flex;
+    padding: 7rem 2rem;
+    justify-content: space-around;
+    // align-items: center;
+
+    .content-flex-item-left {
+      width: 60%;
+      padding: 2rem;
+      h1 {
+        font-size: 5rem;
+        font-weight: 300;
+        // color: $black;
+      }
+
+      p {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        color: #a1a1a1;
+        line-height: 1.5;
+      }
+      // p {
+      //   padding: 2rem 0;
+      //   font-size: 1.5rem;
+      // }
+    }
+
+    .content-flex-item-right {
+      width: 30%;
+
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+  }
 }
 
 footer {

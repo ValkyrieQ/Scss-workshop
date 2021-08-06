@@ -34,7 +34,30 @@ nav {
           padding-bottom: .5rem; }
 
 section.content {
-  grid-area: content; }
+  grid-area: content;
+  padding: 5rem;
+  background-color: #eee;
+  color: #333; }
+  section.content .content-flex {
+    display: flex;
+    padding: 7rem 2rem;
+    justify-content: space-around; }
+    section.content .content-flex .content-flex-item-left {
+      width: 60%;
+      padding: 2rem; }
+      section.content .content-flex .content-flex-item-left h1 {
+        font-size: 5rem;
+        font-weight: 300; }
+      section.content .content-flex .content-flex-item-left p {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        color: #a1a1a1;
+        line-height: 1.5; }
+    section.content .content-flex .content-flex-item-right {
+      width: 30%; }
+      section.content .content-flex .content-flex-item-right img {
+        width: 100%;
+        border-radius: 50%; }
 
 footer {
   grid-area: footer; }
