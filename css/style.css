@@ -6,4 +6,7 @@
   font-family: Arial;
   font-family: 'Lato', sans-serif; }
 
+footer ul {
+  display: flex; }
+
 /*# sourceMappingURL=style.css.map */
