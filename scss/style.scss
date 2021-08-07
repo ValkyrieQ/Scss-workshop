@@ -11,6 +11,7 @@
 $gray: #ccc;
 $white: #fff;
 $black: #333;
+$backgroundContent: #eee;
 
 .container {
   display: grid;
@@ -59,7 +60,7 @@ nav {
 section.content {
   grid-area: content;
   padding: 5rem;
-  background-color: #eee;
+  background-color: $backgroundContent;
   color: $black;
 
   .content-flex {
@@ -78,10 +79,27 @@ section.content {
       }
 
       p {
-        margin-top: 2rem;
+        margin: 2rem 0;
         font-size: 1.5rem;
         color: #a1a1a1;
         line-height: 1.5;
+      }
+
+      .hire-me {
+        display: inline-block;
+        padding: 1rem 2rem;
+        background-color: #c47aed;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #fff;
+        transition: .3s;
+
+        &:hover {
+          background-color: #f64f59;
+          transform: translate(-3px, -3px);
+          box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.3);
+
+        }
       }
       // p {
       //   padding: 2rem 0;
@@ -99,7 +117,7 @@ section.content {
     }
   }
 }
-
+// End content section
 footer {
   grid-area: footer;
 }
