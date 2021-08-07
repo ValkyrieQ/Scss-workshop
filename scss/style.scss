@@ -143,3 +143,57 @@ footer {
   }
 }
 // End footer section
+
+@media screen and (max-width: 480px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "nav"
+      "content"
+      "footer";
+    }
+    
+  nav {
+    ul.menu {
+      margin: 0;
+      li {
+        margin: 2rem;
+      }
+    }
+  }
+
+  section.content {
+    padding: 2rem;
+
+    .content-flex {
+      padding: 2rem 0;
+      flex-direction: column;
+
+      .content-flex-item-left {
+        width: 100%;
+        order: 2;
+        text-align: center;
+
+        h1 {
+          font-size: 3rem;
+        }
+      }
+      .content-flex-item-right {
+        order: 1;
+        width: 70%;
+        margin: auto;
+      }
+    }
+  }
+
+  footer {
+    padding: 0;
+
+    ul {
+      width: 100%;
+      li {
+        padding: 1rem;
+      }
+    }
+  }
+}
