@@ -120,4 +120,26 @@ section.content {
 // End content section
 footer {
   grid-area: footer;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  ul {
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    li {
+      padding: 2rem;
+      a {
+        font-size: 3rem;
+        color: $gray;
+        transition: .3s;
+
+        &:hover {
+          color: $black;
+        }
+      }
+    }
+  }
 }
+// End footer section

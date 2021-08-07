@@ -72,6 +72,22 @@ section.content {
         border-radius: 50%; }
 
 footer {
-  grid-area: footer; }
+  grid-area: footer;
+  padding: 3rem;
+  display: flex;
+  justify-content: center; }
+  footer ul {
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around; }
+    footer ul li {
+      padding: 2rem; }
+      footer ul li a {
+        font-size: 3rem;
+        color: #ccc;
+        transition: .3s; }
+        footer ul li a:hover {
+          color: #333; }
 
 /*# sourceMappingURL=style.css.map */
